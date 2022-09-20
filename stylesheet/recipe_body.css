@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+html {
+    background-color: #FFF;
+}
+
+/*　ヘッダ〜　*/
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.header-logo {
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 13px 60px 13px;
+}
+/* 機能欄 */
+.function-column{
+    background-color: #fff;
+    display: flex;
+    width: 360px;
+    height: 60px;
+}
+.function-column a {
+    width: 20%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 9px;
+}
+.home_button{
+    width: 42px;
+    height: 42px;
+}
+
+/* レシピ　本体 */
+.recipe_image img {
+    width: 360px;
+    height: 230px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.18);
+}
+.recipe_box {
+    width: 320px;
+    margin: 10px auto;
+}
+.recipe_name {
+    height: 36px;
+    font-size:26px;
+}
+.recipe_description {
+    margin: 10px 0 10px 30px;
+
+}
+.ingredient {
+    margin: 0 15px 10px 15px;
+    width: 290px;
+}

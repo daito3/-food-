@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+html {
+    background-color: #FFFCE5;
+}
+
+/*　ヘッダ〜　*/
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.header-logo {
+    font-weight: 800;
+    font-size: 36px;
+    padding: 13px 60px 13px;
+}
+
+
+/* 機能欄 */
+.function-column{
+    background-color: #fff;
+    display: flex;
+    width: 360px;
+    height: 60px;
+}
+.function-column a {
+    width: 20%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 9px;
+}
+.home_button{
+    width: 42px;
+    height: 42px;
+}
+
+
+/*食材のタブ*/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.tabs_color{
+    background-color: #FFFCE5;
+    width: 100%; 
+    max-width: 370px; 
+    margin: 0px; 
+    padding: 10px; 
+    /*display: flex;
+    justify-content: center;*/
+}
+
+a {
+    color:#ccc;
+    text-decoration: none;
+
+}
+
+.tab_main{
+    
+    background-color: #eee;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.tabs li{
+    width: 24%;
+    list-style: none;
+}
+
+.tabs li a{
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #bbb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: 0.3%;
+}
+@media screen and (min-width:769px){
+    .tabs li a:not(.active):after{
+        opacity: 0.7;
+    }
+}
+    
+.tabs li a.active{
+    background-color: #fff;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.18);
+}
+ 
+.contents{
+    margin-top: 0;
+    padding-left: 0;
+}
+.contents li {
+    background-color: #fff;
+    padding: 10px;/*20px*/
+    display: none;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.18);
+}
+
+.contents li.active{
+    display: block;
+}
+/*家にある食材を記録とこ*/
+.counter_cotens_while_top{
+    padding-top:15px;
+}
+.counter{
+    width: 100%;
+    display: flex;
+}
+.conuter_box{
+    width: 100px;/*94*/
+}
+.count_boxs{
+    margin-right: 10px;/*9*/
+}
+.count_box {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.18);
+}
+
+/*食材の絵*/
+.count_box img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+/*増減カウンター*/
+.count_box form {
+    position: relative;
+}
+.count_button_box {
+    position: absolute;
+    top: 0px;
+    display: flex;
+}
+.plus {
+    width: 47px;
+    height: 94px;
+    background: transparent;
+    text-align: left;
+    border: none;
+    font-weight: 600;
+    font-size: 30px;
+    color:#666;
+    text-shadow: 2px 2px 1px #fff,
+                 -2px 2px 1px #fff,
+                 2px -2px 1px #fff,
+                 -2px -2px 1px #fff;
+}
+.minus {
+    width: 47px;
+    height: 94px;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-weight: 600;
+    font-size: 30px;
+    color:#666;
+    text-shadow: 2px 2px 1px #fff,
+                 -2px 2px 1px #fff,
+                 2px -2px 1px #fff,
+                 -2px -2px 1px #fff;
+}
+.food_name {
+    text-align: center;
+}
+.food_number {
+    text-align: center;
+}
+
+/*
+.number {
+    color:rgba(43, 32, 32, 0.76) ;
+    font-size: 12px;
+    border-left: 0;
+    border-right: 0;
+    width: 32px;
+    height: 20px;
+    line-height: 3rem;
+    text-align: center;
+    border: 1px solid #D7DBDD;
+    padding: 0 10px;
+}
+
+.minus{
+    color:rgba(43, 32, 32, 0.76) ;
+    font-size: 12px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 8px;
+    background-color: white;
+    border: 1px solid #D7DBDD;
+    
+    border-radius: 0;
+    outline: 0;
+}
+.plus{
+    color:rgba(43, 32, 32, 0.76) ;
+    font-size: 12px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 8px;
+    background-color: white;
+    border: 1px solid #D7DBDD;
+    border-radius: 0;
+    outline: 0;
+}*/
+
+/*.resetbtn {
+    margin: 20px 0 0 65px;
+}*/
+
+/* 食材追加ボタン */
+/*
+.food-addtion{
+    background-color: #ff8e3c;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
+    text-align: center;
+}
+.food-addtion a img{
+    margin: 9px 0;
+    width: 72px;
+    height: 72px;
+}
+*/

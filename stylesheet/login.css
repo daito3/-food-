@@ -1,0 +1,106 @@
+html {
+    background-color: #FFFCE5;
+}
+* {
+    margin: 0;
+}
+
+/*　ヘッダ〜　*/
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+
+}
+.header-logo {
+    font-size: 36px;
+    font-weight: 800;
+    padding: 13px 60px 13px;
+    color:#000;
+}
+
+/* ログイン機能 */
+.login_form_top {
+    margin: 20px auto;
+}
+
+.login_form {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+}
+
+.input_form {
+    width: 260px;
+    margin: 20px auto;
+}
+
+.titli-login {
+    text-align: center;
+}
+
+.input_form label {
+    font-size: large;
+}
+
+.input_form_class {
+    width: 252px;
+    height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login_button {
+    width: 260px;
+    margin: 0 auto;
+}
+.sign_up_button {
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: #555 1px 1px 2px;
+
+    width: 126px;
+    height: 40px;
+    background-color:rgb(69, 248, 114);
+    border: 2px solid rgb(69, 248, 114);
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.6);
+}
+.submit_button {
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: #555 1px 1px 2px;
+
+    width: 126px;
+    height: 40px;
+    background-color:deepskyblue;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.6);
+}
+
+.next_page {
+    margin: 0 auto;
+    width: 300px;
+}
+.next_page h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.next_page_button {
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+}

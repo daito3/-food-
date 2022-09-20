@@ -1,0 +1,147 @@
+
+
+html {
+    background-color: #FFFCE5;
+}
+
+
+/*　ヘッダ〜　*/
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.18);
+}
+
+
+.header-logo {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 13px 60px 13px;
+    color:#000;
+}
+
+/*.header-menu-Search{
+    float: left;
+    padding: 27px 50px 27px 200px;
+}*/
+
+.header ul{
+    display: flex; 
+    list-style: none;
+}
+
+.header ul li{
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+.header ul li :first-child{
+    border-left: 1px solid #fff;
+}
+.header ul li a{
+    display: block;
+}
+
+/*今日のおすすめを表示*/
+.top-wrapper {
+    padding-bottom: 0px;
+}
+.headline {
+    text-align: center;
+    font-size: 24px;
+    padding:0 0 10px 0;
+}
+
+/*今日のおすすめの献立の写真*/
+.Recommended-menu{
+    width: 195px;
+    height: 280px;
+    padding:10px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.18);
+}
+.Recommended-menu img{
+    width: 195px;
+    height: 156px;
+    display: block;
+    margin:  auto;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.18);
+}
+/*献立の名前*/
+.cooking_name{
+    background-color:white;
+    width: 195px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+}
+.cooking_sab_heading{
+    padding-top: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+/*各機能に移るリンクボタン*/
+.food-function{
+    padding:12px 24px;
+}
+.recipe-function{
+    padding:0 24px 12px 24px;
+}
+.recipe-addtion-function{
+    padding: 12px 24px; 
+}
+
+.btn{
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.18);
+    opacity:0.8;
+    border-radius:20px;
+    background-color: white;
+    width: 280px; 
+    padding-left:25px;
+}
+
+.btn-recipe img{
+    width: 36px;
+    height: 36px;
+}
+.btn-food img{
+    width: 42px;
+    height: 36px;
+}
+.btn-recipe-addtion img{
+    width: 36px;
+    height: 36px;
+}
+
+.btn a{
+    font-size: 42px;
+    text-decoration: none;
+    color:#000;
+}
+
+@media screen and (max-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+    .header {
+        background-color: #ff8e3c;
+        height: 80px;
+    }
+}
+
+footer{
+    background-color: #ff8e3c;
+    height: 80px;
+}

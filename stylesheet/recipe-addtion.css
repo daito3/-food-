@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+html {
+    background-color: #FFFCE5;
+}
+/* ヘッダー */
+* {
+    margin: 0;
+}
+
+.header{
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+}
+.header-logo {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 13px 60px 13px;
+}
+/* 機能欄 */
+.function-column{
+    background-color: #fff;
+    display: flex;
+    width: 360px;
+    height: 60px;
+}
+.function-column a {
+    width: 20%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 9px;
+}
+.home_button{
+    width: 42px;
+    height: 42px;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+/* レシピ追加入力フォーム */
+.header_recipe_addtion{
+    text-align: center;
+    font-size: 24px;
+    padding:10px 0;
+    text-decoration: underline;
+    text-decoration-color:#ff8e3c;
+}
+
+.recipe_addtion_form{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px; 
+}
+.big-syokuzai-lebel{
+    font-size: 24px;
+}
+/* レシピ名css */
+.recipe_name{
+    padding-bottom: 20px;
+}
+/* 食材・調味料css */
+.ingredients{
+    padding-bottom: 20px;
+}
+.syokuzai-lebel{
+    font-size: 18px;
+}
+/* 作り方css */
+.how_to_make{
+    padding-bottom: 20px;
+}

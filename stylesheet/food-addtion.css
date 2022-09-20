@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+html{
+    background-color: #FFFCE5;
+}
+
+* {
+    margin: 0;
+}
+/* ヘッダーのとこ */
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    padding: 13px 26px 13px 26px;
+    height: 80px;
+}
+
+.header-logo {
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+}
+/* たぶのとこ */
+.tabs_color{
+    background-color: #FFFCE5;
+    width:100%; 
+    max-width: 370px; 
+    margin:0px; 
+    padding:0 10px 10px 10px; 
+    /*display: flex;
+    justify-content: center;*/
+}
+
+a {
+    color:#ccc;
+    text-decoration: none;
+
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.tabs li{
+    width: 24%;
+    list-style: none;
+}
+
+.tabs li a{
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #bbb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: 0.3%;
+}
+@media screen and (min-width:769px){
+    .tabs li a:not(.active):after{
+        opacity: 0.7;
+    }
+}
+    
+.tabs li a.active{
+    background-color: #fff;
+}
+ 
+.contents{
+    margin-top: 0;
+    padding-left: 0;
+}
+.contents li {
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.contents li.active{
+    display: block;
+}
+
+/* 食材入力フォーム */
+
+.counter{
+    width: 100%;
+    display: flex;
+}
+.conuter_box{
+    width: 94px;
+}
+.count_boxs{
+    padding-right: 9px;
+}
+
+/*食材の絵*/
+.count_box img{
+    width: 94px;
+    height: 94px;
+}
+/* テキストBOX */
+.number{
+    color:rgba(43, 32, 32, 0.76) ;
+    font-size: 12px;
+    text-align: center;
+    border-left: 0;
+    border-right: 0;
+    width: 32px;
+    height: 20px;
+    line-height: 3rem;
+    text-align: center;
+    border: 1px solid #D7DBDD;
+    padding: 0 10px;
+}

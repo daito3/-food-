@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html {
+    background-color: #FFFCE5;
+}
+
+
+/*　ヘッダ〜　*/
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: #ff8e3c;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.header-logo {
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 13px 60px 13px;
+}
+/* 機能欄 */
+.function-column{
+    background-color: #fff;
+    display: flex;
+    width: 360px;
+    height: 60px;
+}
+.function-column a {
+    width: 20%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 9px;
+}
+.home_button{
+    width: 42px;
+    height: 42px;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/* 提案された献立 */
+.recipe_box_top {
+    margin: 0 0 0 5px;
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipe_box {
+    margin: 10px 0 0 10px;
+    width: 160px;
+    height: 185px;
+    text-decoration: none;
+    /*
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.18);
+    */
+}
+.recipe_image {
+    width: 160px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.18);
+}
+.recipe_name {
+    color: #000;
+}
